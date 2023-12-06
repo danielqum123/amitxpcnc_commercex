@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_commercex_amitpcnc/screens/categories_screen/categories_screen.dart';
 import 'package:flutter_commercex_amitpcnc/screens/home_screen/home_screen.dart';
-import 'package:flutter_commercex_amitpcnc/screens/product_details_screen/details_screen.dart';
 import 'package:flutter_commercex_amitpcnc/screens/profile_screen/profile_screen.dart';
+import 'package:flutter_commercex_amitpcnc/screens/search_screen/search_screen.dart';
+import 'package:flutter_commercex_amitpcnc/screens/wishlist_screen/wishlist_screen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
 import '../../constants.dart';
 
 const Color inActiveIconColor = Color(0xFFB6B6B6);
@@ -30,10 +30,8 @@ class _InitScreenState extends State<InitScreen> {
   final pages = [
     const HomeScreen(),
     const CategoriesScreen(),
-    const Center(
-      child: Text("Search"),
-    ),
-    const DetailsScreen(),
+    const SearchScreen(),
+    const WishListScreen(),
     const ProfileScreen()
   ];
 

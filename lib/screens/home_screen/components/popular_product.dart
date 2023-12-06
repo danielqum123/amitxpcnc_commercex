@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_commercex_amitpcnc/screens/product_details_screen/details_screen.dart';
 
 import '../../../components/product_card.dart';
 import '../../../models/Product.dart';
@@ -16,8 +17,7 @@ class PopularProducts extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: SectionTitle(
             title: title,
-            press: () {
-            },
+            press: () {},
           ),
         ),
         SingleChildScrollView(
@@ -32,13 +32,15 @@ class PopularProducts extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 20),
                       child: ProductCard(
                         product: demoProducts[index],
-                        onPress: () => (),
+                        onPress: () => (Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const DetailsScreen()))),
                       ),
                     );
                   }
 
-                  return const SizedBox
-                      .shrink(); 
+                  return const SizedBox.shrink();
                 },
               ),
               const SizedBox(width: 20),

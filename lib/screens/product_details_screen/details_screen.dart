@@ -23,6 +23,7 @@ class DetailsScreen extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: ElevatedButton(
             onPressed: () {
+              Navigator.pop(context);
             },
             style: ElevatedButton.styleFrom(
               shape: const CircleBorder(),
