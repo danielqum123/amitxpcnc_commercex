@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_commercex_amitpcnc/screens/home_screen/components/custom_list_tile.dart';
 import 'package:flutter_commercex_amitpcnc/screens/home_screen/components/search_field.dart';
-import 'package:flutter_svg/svg.dart';
 
 class WishListScreen extends StatefulWidget {
   const WishListScreen({super.key});
